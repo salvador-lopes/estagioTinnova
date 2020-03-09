@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <h1>CAIXA ELETRÔNICO</h1>
+                  
+        <form action="/saque/${data.id}" method="post">
+            <div>
+                <label for="VALOR DO SAQUE">Quanto você quer sacar?</label>
+                <input type="text" id="valorDoSaque" name="valorDoSaque" value="${data.saque}" placeholder="XXXX" />
+            </div>
+            
+            <input type="submit" value="Sacar" />
+        </form>
+    </body>
+</html>

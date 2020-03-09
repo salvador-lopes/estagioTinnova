@@ -1,0 +1,21 @@
+{
+  "name": "estagio-tinnova",
+  "version": "1.0.0",
+  "description": "criacao de cliente, funcao saque, max 5 usuarios",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "marko": "^4.19.3",
+    "method-override": "^3.0.0",
+    "sqlite3": "https://github.com/mapbox/node-sqlite3/tarball/master"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Salvador Jr.",
+  "license": "ISC"
+}

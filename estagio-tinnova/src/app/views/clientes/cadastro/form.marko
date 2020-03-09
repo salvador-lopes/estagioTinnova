@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <h1>Cadastro de Clientes</h1>
+
+        <form action="/clientes" method="post">
+            
+            <div if(data.cliente.id)>
+                <input type="hidden" name="_method" value="PUT">
+                <input type="hidden" id="id" name="id" value="${data.cliente.id}" />
+            </div>
+
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome_completo" name="nome_completo" value="${data.cliente.nome_completo}" placeholder="coloque o nome do cliente" />
+            </div>
+            <div>
+                <label for="numero da conta">Conta:</label>
+                <input type="text" id="conta" name="conta" value="${data.cliente.conta}" placeholder="XXXX" />
+            </div>
+            <div>
+                <label for="saldo inicial">Saldo inicial:</label>
+                <input type="text" id="saldo" name="saldo"  value="${data.cliente.saldo}" placeholder="XXXX.XX" />
+            </div>
+            <div>
+                <label for="login">Escolha seu Login </label>
+                <input type="text" id="login" name="login"  value="${data.cliente.login}" placeholder="Login" />
+            </div>
+            <div>
+                <label for="senha">Cadastre sua Senha</label>
+                <input type="password" id="password" name="password"  value="${data.cliente.password}" placeholder="senha" />
+            </div>
+
+            <input type="submit" value="Salvar" />
+        </form>
+    </body>
+</html>
